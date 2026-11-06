@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101010" />
+    <meta
+      name="description"
+      content="VOXDIABOLI — konsep plugin restorasi suara dan dialog. Redam kebisingan, pulihkan detail, dan hadirkan kembali kejernihan setiap kata."
+    />
+    <title>VOXDIABOLI — Hidupkan Kembali Setiap Kata</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#utama">Lewati ke konten</a>
+
+    <div class="announcement">
+      <span class="announcement-spark">✳</span> KUASAI SETIAP DETAIL SUARA
+      <span class="announcement-divider">/</span> KENALI VOXDIABOLI
+      <a href="#demo">COBA DEMO <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <header class="site-header" id="atas">
+      <a class="brand" href="#atas" aria-label="VOXDIABOLI, kembali ke atas">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" fill="none">
+            <circle
+              cx="21"
+              cy="21"
+              r="18.5"
+              stroke="currentColor"
+              stroke-width="1.2"
+            />
+            <path
+              d="M5 24 11 24 14 11 18 32 23 17 26 25 30 11 34 22 38 22"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+        <span class="brand-word"
+          >VOX<span>DIABOLI</span><span class="brand-dot">.</span></span
+        >
+      </a>
+      <nav class="header-nav" id="header-nav" aria-label="Navigasi utama">
+        <a href="#ikhtisar">Ikhtisar</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#demo">Demo audio</a>
+        <a href="#harga">Harga</a>
+        <a href="#detail">Spesifikasi</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="cart-button"
+          type="button"
+          id="cart-button"
+          aria-label="Lihat keranjang"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+          >
+            <path d="M3 4h2l2.2 11h11.4l2-8H6" />
+            <circle cx="9" cy="20" r="1" />
+            <circle cx="18" cy="20" r="1" /></svg
+          ><span id="cart-count">0</span>
+        </button>
+        <a class="header-cta" href="#harga"
+          >DAPATKAN SEKARANG <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          type="button"
+          aria-controls="header-nav"
+          aria-expanded="false"
+          aria-label="Buka menu"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="utama">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+        <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-inner container">
+          <div class="hero-copy">
+            <div class="eyebrow light">
+              <span class="red-line"></span> REKAYASA AUDIO GENERASI BARU
+              <span class="eyebrow-index">01 / 05</span>
+            </div>
+            <h1 id="hero-title">Suara rusak.<br /><em>Bukan akhir.</em></h1>
+            <p class="hero-subtitle">
+              Bangkitkan kembali setiap kata dengan
+              <strong>VOXDIABOLI</strong> — pengalaman restorasi dialog yang
+              terasa seperti keajaiban, tetapi dibuat untuk alur kerja
+              profesional.
+            </p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="#harga"
+                >LIHAT PILIHAN <span aria-hidden="true">↗</span></a
+              >
+              <a class="btn btn-outline" href="#demo"
+                >COBA SEKARANG
+                <span class="circle-arrow" aria-hidden="true">↘</span></a
+              >
+            </div>
+            <div class="hero-mini-info">
+              <span class="status-dot"></span> KONSEP PLUGIN RESTORASI AUDIO
+              <span class="hero-mini-divider">—</span> VST3 / AU / AAX
+            </div>
+          </div>
+          <div class="hero-product" aria-label="Ilustrasi antarmuka VOXDIABOLI">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="floating-chip chip-left">
+              <span class="mini-square"></span> SUARA SEBELUM
+            </div>
+            <div class="floating-chip chip-right">
+              <span class="mini-square"></span> DETAIL DIPULIHKAN
+            </div>
+            <div class="plugin-window hero-plugin">
+              <div class="plugin-toolbar">
+                <div class="plugin-brand">
+                  <span class="plugin-brand-icon">◉</span> VOX<span
+                    >DIABOLI</span
+                  ><sup>PRO</sup>
+                </div>
+                <div class="plugin-preset">
+                  <span class="preset-chevron">‹</span> PEMULIHAN STUDIO
+                  <span class="preset-chevron">›</span>
+                </div>
+                <div class="plugin-power" title="Aktif">⏻</div>
+              </div>
+              <div class="plugin-spectrum">
+                <div class="frequency-labels">
+                  <span>100</span><span>200</span><span>500</span><span>1k</span
+                  ><span>2k</span><span>5k</span><span>10k</span
+                  ><span>15k</span>
+                </div>
+                <canvas
+                  class="spectrum-canvas"
+                  id="hero-spectrum"
+                  aria-label="Visualisasi spektrum gelombang suara"
+                ></canvas>
+                <span class="spectrum-label">SINYAL / KELUARAN</span>
+              </div>
+              <div class="plugin-bottom">
+                <div class="plugin-mode">
+                  <div class="plugin-node">✳</div>
+                  <div>
+                    <small>ALGORITMA AKTIF</small
+                    ><span class="mode-pill">STUDIO</span>
+                  </div>
+                </div>
+                <div class="knob-display mini-knob" aria-hidden="true">
+                  <div class="knob-tick"></div>
+                </div>
+                <div class="plugin-levels">
+                  <div>
+                    <small>MASUK</small><i><b></b></i>
+                  </div>
+                  <div>
+                    <small>KELUAR</small><i><b></b></i>
+                  </div>
+                </div>
+              </div>
+              <div class="plugin-footer-strip">
+                <span>VD / 001</span><span>STATUS MESIN: AKTIF</span>
+              </div>
+            </div>
+            <div class="vertical-label" aria-hidden="true">
+              RESTORASI / DIALOG / KONTROL
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom container">
+          <span>DIBUAT UNTUK MEREKA YANG MENDENGAR LEBIH JAUH.</span
+          ><a href="#ikhtisar" class="scroll-hint"
+            >GULIR UNTUK MENJELAJAHI <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+
+      <div class="section-nav-wrap" id="section-nav-wrap">
+        <nav class="section-nav container" aria-label="Navigasi bagian produk">
+          <a class="subnav-brand" href="#atas">VOXDIABOLI<span>®</span></a>
+          <div class="section-nav-links">
+            <a href="#ikhtisar" class="is-active">Ikhtisar</a
+            ><a href="#demo">Demo</a><a href="#fitur">Fitur</a
+            ><a href="#detail">Detail</a>
+          </div>
+          <a href="#harga" class="subnav-cta"
+            >BELI SEKARANG <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+
+      <section
+        class="intro section-spacing"
+        id="ikhtisar"
+        aria-labelledby="intro-title"
+      >
+        <div class="container intro-grid">
+          <div class="intro-heading">
+            <div class="eyebrow">
+              <span class="red-line"></span> PERKENALKAN, VOXDIABOLI
+            </div>
+            <h2 id="intro-title">
+              Pulihkan yang<br />tak terdengar<span class="red-period">.</span>
+            </h2>
+          </div>
+          <div class="intro-body">
+            <span class="large-asterisk" aria-hidden="true">✳</span>
+            <p>
+              Suara yang sempurna tidak selalu dimulai dari rekaman yang
+              sempurna. VOXDIABOLI dirancang sebagai konsep alat restorasi
+              dialog yang membantu membayangkan bagaimana gangguan suara bisa
+              dikurangi dan kejernihan bisa dihadirkan kembali.
+            </p>
+            <p>
+              Lebih dari sekadar mengurangi derau. Sebuah pendekatan cerdas
+              untuk mengembalikan karakter, kedalaman, dan kehadiran suara —
+              tanpa mengorbankan alur kreatif.
+            </p>
+            <a class="text-link" href="#fitur"
+              >JELAJAHI SEMUA FITUR <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="container feature-strips">
+          <div class="feature-strip">
+            <span>01</span><strong>PEREDAM BISING &amp; GEMA</strong
+            ><span class="strip-icon">↗</span>
+          </div>
+          <div class="feature-strip">
+            <span>02</span><strong>PEMULIHAN DETAIL FREKUENSI</strong
+            ><span class="strip-icon">↗</span>
+          </div>
+          <div class="feature-strip">
+            <span>03</span><strong>PERBAIKAN ARTEFAK DIGITAL</strong
+            ><span class="strip-icon">↗</span>
+          </div>
+          <div class="feature-strip">
+            <span>04</span><strong>ALUR KERJA SATU KONTROL</strong
+            ><span class="strip-icon">↗</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase" aria-labelledby="showcase-title">
+        <div class="showcase-inner container">
+          <div class="showcase-heading">
+            <div class="eyebrow light">
+              <span class="red-line"></span> KENALI ANTARMUKANYA
+            </div>
+            <h2 id="showcase-title">
+              Kontrol maksimal.<br /><span>Tanpa kerumitan.</span>
+            </h2>
+            <p>
+              Semua yang Anda perlukan, tepat di tempatnya. Fokus pada suara —
+              bukan pada menu yang tidak ada habisnya.
+            </p>
+            <a href="#demo" class="btn btn-primary"
+              >JELAJAHI DEMO <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="showcase-preview">
+            <div class="showcase-preview-label">
+              VOXDIABOLI / PRO — TAMPILAN ANTARMUKA
+            </div>
+            <div class="plugin-window large-plugin">
+              <div class="plugin-toolbar">
+                <div class="plugin-brand">
+                  <span class="plugin-brand-icon">◉</span> VOX<span
+                    >DIABOLI</span
+                  ><sup>PRO</sup>
+                </div>
+                <div class="plugin-preset">
+                  <span class="preset-chevron">‹</span> PEMULIHAN STUDIO
+                  <span class="preset-chevron">›</span>
+                </div>
+                <div class="plugin-power">⏻</div>
+              </div>
+              <div class="plugin-spectrum">
+                <div class="frequency-labels">
+                  <span>100</span><span>200</span><span>500</span><span>1k</span
+                  ><span>2k</span><span>5k</span><span>10k</span
+                  ><span>15k</span>
+                </div>
+                <canvas
+                  class="spectrum-canvas"
+                  id="showcase-spectrum"
+                  aria-label="Visualisasi spektrum audio"
+                ></canvas>
+              </div>
+              <div class="plugin-bottom">
+                <div class="plugin-mode">
+                  <div class="plugin-node">✳</div>
+                  <div>
+                    <small>ALGORITMA AKTIF</small
+                    ><span class="mode-pill">STUDIO</span>
+                  </div>
+                </div>
+                <div class="knob-display mini-knob">
+                  <div class="knob-tick"></div>
+                </div>
+                <div class="plugin-levels">
+                  <div>
+                    <small>MASUK</small><i><b></b></i>
+                  </div>
+                  <div>
+                    <small>KELUAR</small><i><b></b></i>
+                  </div>
+                </div>
+              </div>
+              <div class="plugin-footer-strip">
+                <span>VD / 001</span><span>RESTORASI DIGITAL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="demo-section section-spacing"
+        id="demo"
+        aria-labelledby="demo-title"
+      >
+        <div class="container">
+          <div class="section-topline">
+            <span class="eyebrow"
+              ><span class="red-line"></span> DENGARKAN PERBEDAANNYA</span
+            ><span class="section-number">02 / 05</span>
+          </div>
+          <div class="demo-heading">
+            <h2 id="demo-title">Dari bising<br />menjadi <em>jernih.</em></h2>
+            <p>
+              Dengarkan contoh audio simulasi. Putar rekamannya, lalu geser
+              kontrol dari suara awal ke versi yang lebih bersih untuk
+              membandingkan hasilnya secara langsung.
+            </p>
+          </div>
+          <div class="demo-console">
+            <div class="demo-console-top">
+              <div class="demo-console-brand">
+                VOX<span>DIABOLI</span> <small>/ LAB AUDIO</small>
+              </div>
+              <div class="demo-live"><span></span> DEMO INTERAKTIF</div>
+            </div>
+            <div class="demo-player">
+              <div class="wave-labels">
+                <span>SUMBER SUARA / SIMULASI</span
+                ><span id="demo-time">00:00 / 00:00</span>
+              </div>
+              <canvas
+                id="demo-wave"
+                class="demo-wave"
+                aria-label="Gelombang audio demo"
+              ></canvas>
+              <div class="wave-timeline">
+                <span>0:00</span><span>REKAMAN CONTOH</span
+                ><span id="demo-duration">0:00</span>
+              </div>
+            </div>
+            <div class="demo-controls">
+              <div class="demo-side">
+                <span class="control-caption">01 / PEMUTAR AUDIO</span
+                ><button
+                  id="play-demo"
+                  class="play-demo"
+                  type="button"
+                  aria-label="Putar audio demo"
+                >
+                  <svg
+                    class="play-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M7 4.6 20 12 7 19.4V4.6Z" /></svg
+                  ><svg
+                    class="pause-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <rect x="6" y="4" width="4" height="16" />
+                    <rect x="14" y="4" width="4" height="16" />
+                  </svg></button
+                ><strong id="player-status">PUTAR DEMO</strong>
+              </div>
+              <div class="knob-column">
+                <span class="control-caption">02 / INTENSITAS PEMULIHAN</span>
+                <div class="dial-scale">
+                  <span>SEBELUM</span>
+                  <div class="dial-wrap">
+                    <div class="dial-halo" id="dial-halo">
+                      <button
+                        id="mix-dial"
+                        type="button"
+                        role="slider"
+                        aria-label="Intensitas pemulihan audio"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="70"
+                        aria-valuetext="70 persen"
+                        tabindex="0"
+                      >
+                        <i class="dial-indicator"></i
+                        ><span class="dial-center">VD</span>
+                      </button>
+                    </div>
+                  </div>
+                  <span>SESUDAH</span>
+                </div>
+                <div class="dial-value" id="dial-value">70<span>%</span></div>
+              </div>
+              <div class="demo-side demo-result">
+                <span class="control-caption">03 / HASIL SUARA</span>
+                <div class="compare-labels">
+                  <span>ASLI</span><span>HASIL</span>
+                </div>
+                <input
+                  type="range"
+                  class="compare-range"
+                  id="mix-range"
+                  min="0"
+                  max="100"
+                  value="70"
+                  aria-label="Bandingkan suara sebelum dan sesudah"
+                />
+                <div class="result-status">
+                  <span class="result-dot"></span
+                  ><span id="mix-description">DOMINAN SUARA HASIL</span>
+                </div>
+              </div>
+            </div>
+            <p class="demo-disclaimer">
+              * Contoh sebelum/sesudah dibuat khusus sebagai simulasi antarmuka.
+              Ini bukan hasil pemrosesan perangkat lunak VOXDIABOLI.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="benefits section-spacing"
+        id="fitur"
+        aria-labelledby="features-title"
+      >
+        <div class="container">
+          <div class="section-topline">
+            <span class="eyebrow light"
+              ><span class="red-line"></span> LEBIH DARI SEKADAR JERNIH</span
+            ><span class="section-number light-number">03 / 05</span>
+          </div>
+          <div class="benefits-heading">
+            <h2 id="features-title">
+              Kejernihan instan.<br /><span>Kemungkinan tanpa batas.</span>
+            </h2>
+            <p>
+              Dirancang untuk menjawab tantangan yang paling sering muncul dalam
+              rekaman dialog.
+            </p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <span class="benefit-index">01 /</span>
+              <div class="benefit-graphic noise-graphic">
+                <span></span><span></span><span></span><span></span><span></span
+                ><span></span><span></span><span></span><span></span
+                ><span></span><span></span><span></span><span></span
+                ><span></span><span></span>
+              </div>
+              <h3>Pengurangan derau</h3>
+              <p>Bantu minimalkan kebisingan latar yang mengganggu dialog.</p>
+              <span class="benefit-arrow">↗</span>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-index">02 /</span>
+              <div class="benefit-graphic rings-graphic">
+                <span></span><span></span><span></span>
+              </div>
+              <h3>Pengendalian gema</h3>
+              <p>
+                Buat ruang terasa lebih terkendali dengan resonansi yang lebih
+                halus.
+              </p>
+              <span class="benefit-arrow">↗</span>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-index">03 /</span>
+              <div class="benefit-graphic bars-graphic">
+                <span></span><span></span><span></span><span></span><span></span
+                ><span></span><span></span><span></span><span></span>
+              </div>
+              <h3>Detail frekuensi</h3>
+              <p>
+                Hadirkan kembali nuansa suara yang sering hilang dalam rekaman.
+              </p>
+              <span class="benefit-arrow">↗</span>
+            </div>
+            <div class="benefit-card">
+              <span class="benefit-index">04 /</span>
+              <div class="benefit-graphic pixel-graphic">
+                <span>■ □ ■ □<br />□ ■ □ ■<br />■ □ ■ □<br />□ ■ □ ■</span>
+              </div>
+              <h3>Perbaikan artefak</h3>
+              <p>
+                Visualisasi penanganan karakter suara yang terdengar patah atau
+                kasar.
+              </p>
+              <span class="benefit-arrow">↗</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="technology section-spacing"
+        aria-labelledby="technology-title"
+      >
+        <div class="container">
+          <div class="section-topline">
+            <span class="eyebrow"
+              ><span class="red-line"></span> TEKNOLOGI DI BALIK SUARA</span
+            ><span class="section-number">04 / 05</span>
+          </div>
+          <h2 id="technology-title">
+            Detail yang terasa.<br /><em>Teknologi yang bekerja.</em>
+          </h2>
+          <div class="technology-grid">
+            <div class="tech-card">
+              <div class="tech-art neural-art" aria-hidden="true">
+                <svg viewBox="0 0 450 250" preserveAspectRatio="xMidYMid meet">
+                  <g stroke="currentColor" stroke-width=".8" opacity=".4">
+                    <path
+                      d="M50 126 130 56 235 94 324 47 407 118 320 203 222 163 131 215Z"
+                    />
+                    <path
+                      d="M50 126 235 94 320 203 130 56 222 163 407 118 131 215 324 47 50 126"
+                    />
+                    <path d="M131 215 235 94 324 47M130 56 320 203 407 118" />
+                  </g>
+                  <g fill="currentColor">
+                    <circle cx="50" cy="126" r="5" />
+                    <circle cx="130" cy="56" r="6" />
+                    <circle cx="235" cy="94" r="9" />
+                    <circle cx="324" cy="47" r="5" />
+                    <circle cx="407" cy="118" r="7" />
+                    <circle cx="320" cy="203" r="6" />
+                    <circle cx="222" cy="163" r="11" />
+                    <circle cx="131" cy="215" r="4" />
+                  </g>
+                </svg>
+              </div>
+              <div class="tech-card-label">01 / MESIN PEMROSESAN</div>
+              <h3>Arsitektur audio<br />yang cerdas.</h3>
+              <p>
+                Konsep mesin pemrosesan berbasis pola suara untuk membantu
+                menghadirkan dialog yang lebih konsisten. Antarmuka dan
+                visualisasi ini bersifat demonstratif.
+              </p>
+            </div>
+            <div class="tech-card">
+              <div class="tech-art language-art" aria-hidden="true">
+                <span>SUARA</span><span>VOICE</span><span>声</span
+                ><span>VOIX</span><span>STIMME</span><span>صوت</span
+                ><span>音</span><span>VOZ</span>
+              </div>
+              <div class="tech-card-label">02 / BAHASA &amp; KARAKTER</div>
+              <h3>Setiap aksen.<br />Setiap cerita.</h3>
+              <p>
+                Dibayangkan untuk beragam karakter vokal dan lingkungan
+                perekaman, dari percakapan yang intim hingga produksi skala
+                besar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="container quote-layout">
+          <div class="quote-mark">“</div>
+          <div class="quote-main">
+            <div class="quote-kicker">FILOSOFI VOXDIABOLI</div>
+            <blockquote>
+              Suara yang kuat bukan hanya yang terdengar lantang.
+              <em>Suara yang kuat adalah yang tetap terasa nyata.</em>
+            </blockquote>
+            <span>— DIBUAT UNTUK KEBEBASAN KREATIF</span>
+          </div>
+          <div class="quote-number">VD / 2026</div>
+        </div>
+      </section>
+
+      <section
+        class="pricing section-spacing"
+        id="harga"
+        aria-labelledby="pricing-title"
+      >
+        <div class="container">
+          <div class="section-topline">
+            <span class="eyebrow"
+              ><span class="red-line"></span> PILIH ALUR KERJA ANDA</span
+            ><span class="section-number">05 / 05</span>
+          </div>
+          <div class="pricing-head">
+            <h2 id="pricing-title">
+              Satu suara.<br /><em>Banyak kemungkinan.</em>
+            </h2>
+            <p>
+              Dari kreator independen sampai studio profesional, temukan
+              tampilan paket yang sesuai kebutuhan produksi Anda.
+            </p>
+          </div>
+          <div class="pricing-grid">
+            <article class="price-card">
+              <div class="price-card-header">
+                <span>UNTUK KREATOR</span><span>01</span>
+              </div>
+              <h3>VOXDIABOLI</h3>
+              <p class="package-desc">
+                Peralatan inti untuk alur kerja audio yang lebih cepat.
+              </p>
+              <div class="price"><small></small>Gratis Unduh</div>
+              <div class="price-note">Harga ilustratif untuk demo website</div>
+              <ul>
+                <li>Simulasi pemrosesan lokal</li>
+                <li>Penanganan suara dan dialog</li>
+                <li>Kontrol pemulihan sederhana</li>
+                <li>Antarmuka studio minimalis</li>
+                <li>Konsep lisensi satu perangkat</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-dark buy-btn"
+                data-product="VOXDIABOLI"
+                data-price="1.499.000"
+              >
+                PILIH PAKET <span>↗</span>
+              </button>
+            </article>
+            <article class="price-card featured">
+              <div class="price-card-header">
+                <span>UNTUK PROFESIONAL</span
+                ><span>02 <span class="popular-tag">PALING LENGKAP</span></span>
+              </div>
+              <h3>VOXDIABOLI <span>PRO</span></h3>
+              <p class="package-desc">
+                Kontrol lebih jauh untuk kebutuhan pascaproduksi.
+              </p>
+              <div class="price"><small>$</small>150</div>
+              <div class="price-note">Harga ilustratif untuk demo website</div>
+              <ul>
+                <li>Seluruh fitur paket dasar</li>
+                <li>Visualisasi pemrosesan multiband</li>
+                <li>Preset karakter dan frekuensi</li>
+                <li>Perbandingan hasil A/B</li>
+                <li>Konsep lisensi studio profesional</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-primary buy-btn"
+                data-product="VOXDIABOLI PRO"
+                data-price="4.499.000"
+              >
+                PILIH PAKET <span>↗</span>
+              </button>
+            </article>
+            <article class="price-card">
+              <div class="price-card-header">
+                <span>UNTUK STUDIO</span><span>03</span>
+              </div>
+              <h3>STUDIO <span>SUITE</span></h3>
+              <p class="package-desc">
+                Satu ruang kerja untuk kebutuhan suara yang kompleks.
+              </p>
+              <div class="price"><small>$</small>300</div>
+              <div class="price-note">Harga ilustratif untuk demo website</div>
+              <ul>
+                <li>Seluruh fitur paket Pro</li>
+                <li>Konsep perangkat audio terintegrasi</li>
+                <li>Pengaturan untuk beberapa proyek</li>
+                <li>Alur kerja pascaproduksi</li>
+                <li>Pengelolaan preset lanjutan</li>
+              </ul>
+              <button
+                type="button"
+                class="btn btn-dark buy-btn"
+                data-product="STUDIO SUITE"
+                data-price="6.999.000"
+              >
+                PILIH PAKET <span>↗</span>
+              </button>
+            </article>
+          </div>
+          <p class="price-footnote">
+            * VOXDIABOLI merupakan website konsep. Harga, paket, dan fitur di
+            atas adalah konten demonstrasi, bukan penawaran produk yang tersedia
+            secara komersial.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="details section-spacing"
+        id="detail"
+        aria-labelledby="detail-title"
+      >
+        <div class="container details-grid">
+          <div class="details-intro">
+            <div class="eyebrow light">
+              <span class="red-line"></span> SELURUH DETAILNYA
+            </div>
+            <h2 id="detail-title">
+              Siap masuk<br />ke alur kerja<span>.</span>
+            </h2>
+            <p>
+              Rangkuman informasi untuk memberikan gambaran bagaimana produk
+              dapat disajikan dalam halaman komersial.
+            </p>
+            <a class="btn btn-primary" href="#harga"
+              >LIHAT PAKET <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="accordion" id="spec-accordion">
+            <details open>
+              <summary>Kompatibilitas aplikasi <span>+</span></summary>
+              <div class="accordion-content">
+                <p>
+                  Konsep plugin ditujukan untuk perangkat lunak produksi audio
+                  dan video seperti:
+                </p>
+                <div class="compat-list">
+                  <span>Pro Tools</span><span>Logic Pro</span
+                  ><span>Ableton Live</span><span>Cubase</span
+                  ><span>Reaper</span><span>DaVinci Resolve</span>
+                </div>
+              </div>
+            </details>
+            <details>
+              <summary>Format dan sistem <span>+</span></summary>
+              <div class="accordion-content">
+                <p>
+                  Contoh format distribusi plugin: VST3, AU, dan AAX. Platform
+                  target yang ditampilkan: macOS dan Windows. Dukungan aktual
+                  belum tersedia pada versi konsep ini.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Spesifikasi audio <span>+</span></summary>
+              <div class="accordion-content">
+                <p>
+                  Konfigurasi demonstratif mono/stereo dengan opsi sample rate
+                  44,1 / 48 / 88,2 / 96 / 192 kHz. Angka-angka ini merupakan
+                  referensi rancangan antarmuka.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>Panduan penggunaan <span>+</span></summary>
+              <div class="accordion-content">
+                <p>
+                  Gunakan pemutar di bagian Demo untuk membandingkan dua berkas
+                  audio simulasi. Putar kenop atau geser slider untuk mengatur
+                  percampuran hasil.
+                </p>
+                <a class="inline-arrow" href="#demo"
+                  >BUKA DEMO <span>↗</span></a
+                >
+              </div>
+            </details>
+            <details>
+              <summary>Riwayat versi <span>+</span></summary>
+              <div class="accordion-content">
+                <p>
+                  Versi tampilan 1.0 — prototipe halaman produk VOXDIABOLI.
+                  Belum termasuk mesin pengolahan suara, sistem pembelian, atau
+                  unduhan plugin.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="last-cta">
+        <div class="container last-cta-inner">
+          <div>
+            <div class="eyebrow light">
+              <span class="red-line"></span> BERIKAN SUARA ANDA RUANG
+            </div>
+            <h2>Biarkan setiap<br /><em>kata terdengar.</em></h2>
+          </div>
+          <div class="last-cta-right">
+            <p>
+              Ide bagus pantas didengar. Temukan pengalaman restorasi audio yang
+              dibayangkan untuk memberi ruang bagi setiap detail.
+            </p>
+            <button type="button" class="btn btn-white" id="trial-button">
+              JELAJAHI VERSI DEMO <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="cta-watermark" aria-hidden="true">V<span>D</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <a class="footer-logo" href="#atas"
+            >VOX<span>DIABOLI</span><b>.</b></a
+          >
+          <div class="footer-columns">
+            <div>
+              <span>NAVIGASI</span><a href="#ikhtisar">Ikhtisar</a
+              ><a href="#demo">Demo</a><a href="#fitur">Fitur</a
+              ><a href="#harga">Harga</a>
+            </div>
+            <div>
+              <span>INFORMASI</span><a href="#detail">Spesifikasi</a
+              ><a href="#detail">Panduan</a><a href="#harga">Paket</a>
+            </div>
+            <div>
+              <span>STATUS</span>
+              <p>PROYEK KONSEP<br />BUKAN PRODUK RESMI</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 VOXDIABOLI. KONSEP WEBSITE.</span
+          ><span>DIBUAT DENGAN HTML, CSS &amp; JAVASCRIPT.</span
+          ><a href="#atas">KEMBALI KE ATAS ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="site-modal" id="site-modal" aria-labelledby="modal-title">
+      <form method="dialog">
+        <button type="submit" class="modal-close" aria-label="Tutup jendela">
+          ×
+        </button>
+      </form>
+      <div class="modal-symbol">✳</div>
+      <h2 id="modal-title">Jelajahi VOXDIABOLI</h2>
+      <p id="modal-description">
+        Ini adalah prototipe visual. Unduhan dan pembelian tidak tersedia.
+      </p>
+      <div class="modal-selection" id="modal-selection" hidden></div>
+      <button
+        class="btn btn-primary modal-dismiss"
+        type="button"
+        id="modal-dismiss"
+      >
+        KEMBALI KE WEBSITE <span>↗</span>
+      </button>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <audio
+      id="audio-before"
+      preload="metadata"
+      src="assets/audio-sebelum.wav"
+    ></audio
+    ><audio
+      id="audio-after"
+      preload="metadata"
+      src="assets/audio-sesudah.wav"
+    ></audio>
+  </body>
+</html>
